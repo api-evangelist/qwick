@@ -1,8 +1,28 @@
 aid: qwick
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qwick.png
 name: Qwick
-description: 'Qwick is a company surfaced as a portfolio company of foundry-group and added to the API
-  Evangelist network as a stub for enrichment. Sector: marketplace. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Qwick is an AI-powered workforce management platform for the hospitality
+  industry, connecting businesses with vetted hospitality professionals ("Pros") for
+  on-demand shifts across 42 states. Its products span the Marketplace (intelligent
+  shift matching), QwickGo (same-day shift posting), Jobs (performance-based hiring
+  with paid working interviews), Compliance (scheduling and time-tracking rules enforcement),
+  and Pay (multi-state W-2 and 1099 payroll). Qwick documents a REST API (v2) plus
+  webhooks for custom integrations exposing shifts, pros, hours, invoices, and compliance
+  data, and pre-built integrations with payroll (ADP, Gusto, Paychex, Paycom), POS
+  (Toast, Square, Lightspeed), HRIS (Workday, BambooHR), scheduling (7shifts, Deputy,
+  When I Work), and SSO (Okta, Microsoft Entra, Google Workspace). It is headquartered
+  in Charleston, SC and backed by Foundry Group.'
 url: https://raw.githubusercontent.com/api-evangelist/qwick/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Marketplace
+- Hospitality
+- Staffing
+- Workforce Management
+- Gig Economy
+- Payroll
+- Scheduling
+- On-Demand Labor
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/qwick-domain-security.yml
 - type: Website
   url: https://www.qwick.com
+- type: Integrations
+  url: https://www.qwick.com/integrations/
+- type: Blog
+  url: https://www.qwick.com/blog/
+- type: HelpCenter
+  url: https://support.qwick.com
+- type: PrivacyPolicy
+  url: https://www.qwick.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.qwick.com/terms-of-use/
+- type: SignUp
+  url: https://biz.qwick.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
